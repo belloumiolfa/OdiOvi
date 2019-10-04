@@ -166,10 +166,10 @@ h1.slog {
 }
 
 
-/* header style */
+/************************************* header style *************************************/
 
 
-/* top bar */
+/************************************* top bar *************************************/
 
 #navbar {
     background: url('C:/Users/bello/OneDrive/Documents/projects/Implimentation projects/OdiOvi/Images/background1.jpg');
@@ -186,10 +186,7 @@ header {
 
 .nav-wrapper-top {
     width: 100%;
-    margin: 0 auto;
     background: black;
-    max-width: 100%;
-    text-align: left;
     position: relative;
 }
 
@@ -297,20 +294,20 @@ body.scroll header nav.sticky-top-bar {
 }
 
 
-/* Activity */
+/************************************* spacial-warapper (activity/values) *************************************/
 
-#activity .warapper {
+.spetial-warapper {
     width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 
-#activity .warapper img {
+.spetial-warapper img {
     width: 130%;
 }
 
-.activity-description {
+.description {
     background-color: white;
     text-align: right;
     font-size: 30px;
@@ -321,13 +318,14 @@ body.scroll header nav.sticky-top-bar {
 }
 
 
-/* NUMBERS STYLES */
+/************************************* numbers *************************************/
 
 #numbers {
     max-width: 80%;
     margin: 100px auto;
     padding: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center
 }
@@ -343,46 +341,13 @@ body.scroll header nav.sticky-top-bar {
 }
 
 
-/* values style */
+/************************************* services *************************************/
 
-#values .warapper {
+#services .warapper {
     width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-}
-
-#values .warapper img {
-    width: 150%;
-}
-
-.values-description {
-    background-color: white;
-    text-align: left;
-    font-size: 30px;
-    margin: 50px 0;
-    padding: 80px 50px;
-    z-index: 10;
-    transform: translateX(-200px)
-}
-
-
-/* Services */
-
-#services .warapper {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-#services .box-title {
-    max-width: 700px;
-    max-height: 600px;
-    width: 700px;
-    height: 600px;
-    background: rgba(0, 0, 0, 0.1);
-    transform: translateY(-400px);
-    margin-left: 700px
 }
 
 .services-description {
@@ -417,18 +382,18 @@ body.scroll header nav.sticky-top-bar {
 }
 
 
-/* testimony*/
+/************************************* testimony *************************************/
 
 #testimony {
     background: url('../Images/background1.jpg') no-repeat center/cover;
     height: 50vh;
     text-align: center;
     padding: 30px;
+    margin-top: 300px;
 }
 
 #testimony .warapper .slider-div {
     border: solid 2px rgba(131, 131, 131, 0.8);
-    padding-top: 100px;
     padding-right: 100px;
     padding-left: 100px;
     margin-right: 120px;
@@ -444,7 +409,6 @@ body.scroll header nav.sticky-top-bar {
 }
 
 #testimony .warapper .slider-div.slide {
-    width: 500px;
     max-height: 300px;
     padding: 15px;
     background: rgba(0, 0, 0, 0.2)
@@ -491,7 +455,7 @@ body.scroll header nav.sticky-top-bar {
 }
 
 
-/* Subscribe */
+/************************************* subscribe *************************************/
 
 #subscribe .warapper {
     display: flex;
@@ -500,7 +464,7 @@ body.scroll header nav.sticky-top-bar {
 }
 
 #subscribe .warapper form {
-    width: 1000px;
+    width: 100%;
     margin: 100px 150px;
 }
 
@@ -526,29 +490,23 @@ body.scroll header nav.sticky-top-bar {
 }
 
 
-/* footer  style */
+/************************************* footer *************************************/
 
 #footer {
     background: black;
-    height: 400px;
 }
 
 #footer .warapper {
     display: flex;
     justify-content: space-between;
-    text-align: center;
-}
-
-#footer .warapper div.navigation {
-    width: 20%;
+    align-items: center;
 }
 
 #footer .warapper .links {
-    width: 20%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
-    margin: 50px;
 }
 
 #footer .warapper .links div {
@@ -556,7 +514,7 @@ body.scroll header nav.sticky-top-bar {
 }
 
 #footer .warapper .contact {
-    margin: 50px
+    margin: 30px
 }
 
 #footer .warapper .contact .textarea-celulle {
@@ -568,29 +526,26 @@ body.scroll header nav.sticky-top-bar {
     width: 500px;
     height: 40px;
     background: white;
-    margin: 5px;
+    margin: 5px auto;
 }
 
 #footer .warapper .social-media {
-    width: 20%;
+    width: 15%;
     margin: 50px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
-}
-
-#footer .warapper .social-media div {
-    display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
 #footer .warapper .social-media .item img {
     width: 50px;
     height: 50px;
+    margin: 5px;
 }
 
 
-/*copiright*/
+/************************************* testimony *************************************/
 
 #copiright {
     width: 100%;

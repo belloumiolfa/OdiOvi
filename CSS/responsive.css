@@ -1,10 +1,47 @@
+@media only screen and (max-width:1200px) {
+    #footer .warapper .social-media .item img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    #activity .warapper img {
+        width: 100%;
+    }
+    .activity-description {
+        font-size: 25px;
+        margin: 30px 0;
+        padding: 30px 30px;
+    }
+    #values .warapper img {
+        width: 100%;
+    }
+    .values-description {
+        font-size: 25px;
+        margin: 30px 0;
+        padding: 60px 30px;
+    }
+    #footer .warapper .social-media {
+        width: 100%;
+        margin: 50px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center
+    }
+    #footer .warapper .social-media div {
+        margin: 10px
+    }
+}
+
 @media only screen and (max-width:768px) {
     .menu-trigger {
         background: url('../Images/hamburger-icon.svg') no-repeat center/cover;
         width: 35px;
         height: 35px;
         display: block;
-        z-index: 10;
+        z-index: 30;
         position: absolute;
         right: 10px;
         top: 15px;
@@ -16,7 +53,7 @@
         left: 0;
         bottom: 0;
         background: rgba(0, 0, 0, 0.7);
-        z-index: 10;
+        z-index: 30;
         display: none
     }
     .main-overlay::after {
@@ -28,9 +65,9 @@
         position: fixed;
         top: 10px;
         right: 10px;
-        z-index: 20;
+        z-index: 30;
     }
-    /* responsive menu style */
+    /************************************* menu *************************************/
     .sticky-top-bar-res {
         position: fixed;
         top: 0;
@@ -84,5 +121,122 @@
     }
     body.menu-is-active .menu-trigger {
         display: none;
+    }
+    /************************************* activity *************************************/
+    .spetial-warapper {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .spetial-warapper img {
+        width: 100%;
+    }
+    .description {
+        text-align: center;
+        font-size: 30px;
+        z-index: 10;
+        transform: translateX(0)
+    }
+    .box-title {
+        transform: rotate(-90deg);
+        height: 50px;
+        margin-left: 150px;
+    }
+    .box-title .title {
+        font-size: 30px
+    }
+    /************************************* numbers *************************************/
+    #numbers .item img {
+        width: 100px;
+    }
+    #numbers .item p {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center
+    }
+    /************************************* services *************************************/
+    #services .warapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .services-description {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 150px auto;
+    }
+    .services-description .item2 {
+        transform: translateY(0)
+    }
+    .services-description .item3 {
+        transform: translateY(0)
+    }
+    /************************************* testimony *************************************/
+    #testimony {
+        margin-top: auto;
+    }
+    #testimony .warapper .slider-div {
+        border: solid 2px rgba(131, 131, 131, 0.8);
+        padding-top: 80px;
+        padding-right: 80px;
+        padding-left: 80px;
+        margin-right: auto;
+        margin-left: auto;
+        transform: translateY(-100px);
+        color: white;
+    }
+    #testimony .warapper .slider-div .slide div h5 {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-size: 30px;
+    }
+    #testimony .user {
+        margin-top: 80px
+    }
+    /************************************* subscribe *************************************/
+    #subscribe .warapper {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-top: 50px
+    }
+    #subscribe .warapper form {
+        width: 100%;
+        margin: 100px 0;
+    }
+    #subscribe .warapper form span {
+        font-size: 30px;
+        line-height: 40px;
+        margin: auto;
+    }
+    #subscribe .warapper form p {
+        margin: auto;
+    }
+    .input-celulle {
+        width: 500px;
+        height: 50px;
+    }
+    #subscribe .warapper form button {
+        width: 500px;
+        height: 40px;
+        background: rgba(0, 0, 0, 0.2)
+    }
+    /************************************* footer *************************************/
+    #footer .warapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #footer .warapper .links {
+        margin: auto;
+    }
+    #footer .warapper .links div {
+        margin: 30px;
     }
 }
